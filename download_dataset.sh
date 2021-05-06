@@ -10,7 +10,7 @@ OD=${3:-$DEFAULT_OD}
 
 if command -v axel &> /dev/null
 then
-    axel --num-connections=8 --output=$OF $URL
+    axel --num-connections=4 --output=$OF $URL
 elif command -v curl &> /dev/null
 then
     curl $URL --output $OF
